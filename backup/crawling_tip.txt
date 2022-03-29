@@ -1,0 +1,25 @@
+function saveAsFile(str, filename) {
+    var downloadableLink = document.createElement('a');
+    downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(str));
+    downloadableLink.download = filename + ".txt";
+    document.body.appendChild(downloadableLink);
+    downloadableLink.click();
+    document.body.removeChild(downloadableLink);
+}
+
+function sleep (delay) {
+   var start = new Date().getTime();
+   while (new Date().getTime() < start + delay);
+}
+
+
+for(var i = 0; i<400; i++){
+    var html = document.querySelector('html')
+    var date = document.querySelector('.indicatorDate')
+
+    saveAsFile(html.innerHTML, date.innerText);
+
+    var button = document.querySelectorAll('.ManualControl dd a')[2]
+    button.click()
+    sleep(1000)
+}
