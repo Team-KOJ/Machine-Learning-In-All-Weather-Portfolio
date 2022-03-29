@@ -35,5 +35,5 @@
 <img title="그림 3" src="https://user-images.githubusercontent.com/67966414/135439292-a04e1f89-e749-41df-b374-e8c2f43ef256.png" alt="Boss1" style="margin-left: auto; margin-right: auto; display: block"/>
 <p align = "center">&#91;그림 3&#93;</p>
 
-# 외부 데이터 
+# 외부 데이터
 통계청의 경기순환시계와 Investing.com의 코스피, 국채, 원자재, 금현물 데이터를 사용하였습니다.
